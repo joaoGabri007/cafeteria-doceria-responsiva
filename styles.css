@@ -128,6 +128,8 @@ img {
 .imagem {
     width: 100%;
     border-radius: 50%;
+    display: block;
+    margin: auto;
 }
 
 /*.card h2 {
