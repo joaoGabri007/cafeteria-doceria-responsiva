@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Encanto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onresize="mudouTamanho()">
+    <header id="inicio" class="inicio">
+        <h1>Café & Encanto</h1>
+        <h2>Doce Aroma em cada momento! ☕🍰</h2>
+    </header>
+
+    <!--<div class="link">-->
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+
+            <br>
+
+            <ul>
+                <li><a href="#inicio" class="link">ínicio</a></li>
+                <li><a href="#cardapio" class="link">Cardápio</a></li>
+                <li><a href="#sobre-nos" class="link">Sobre nós</a></li>
+                <li><a href="#contato" class="link">Contado</a></li>
+            </ul>
+        </menu>
+
+    <br>
+
+    <p>
+       Um cantinho feito para você desacelerar, aproveitar bons momentos e se deliciar com sabores especiais.
+    </p>
+
+    <br>
+
+    <p>
+       Aqui, cada café é preparado com carinho e cada doce é feito para transformar pequenos momentos em lembranças deliciosas. Venha experimentar nossos cafés, bolos, tortas e outras delícias preparadas especialmente para você.
+    </p>
+
+    <br>
+    
+    <p>
+       Sinta o aroma, prove a doçura e faça uma pausa no seu dia. 🤎
+    </p>
+
+    <br>
+
+    <img src="imagem/ChatGPT Image 18 de set. de 2026 20_34_06.png" alt="cafeteria">
+
+    <h3 id="cardapio" class="cardapio">🍰 Nossos destaques</h3>
+
+    <br>
+
+    <h4>
+      ☕ Cappuchino Cremoso
+    </h4>
+
+    <br>
+
+    <div class="card">
+        <img class="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRErjwz29FdLQglencEBpjcIshyJ4eE8OQXTjcIPYxqtA&s=10" alt="Cappuchino">
+
+        <br>
+
+       <p>
+        Café espresso, leite vaporizado e espuma cremosa.
+       </p>
+    </div>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth > 768) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        } 
+    </script>
+</body>
+</html>
