@@ -194,3 +194,33 @@ footer {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+    h1 { 
+        font-size: 65px; 
+    }     
+
+    img { 
+        width: 690px; 
+    } 
+
+    .produto { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+    } 
+} 
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    h1 { 
+        font-size: 90px; 
+    } 
+
+    img { 
+        width: 1000px; 
+    } 
+
+    .produto { 
+       display: grid; 
+       grid-template-columns: 1fr 1fr 1fr; 
+    } 
+}
