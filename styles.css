@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -19,7 +20,6 @@ i#burguer {
     cursor: pointer;
     position: fixed;
     font-size: 40px;
-    margin-right: 10px;
     top: 10px;
     right: 20px;
     z-index: 1000;
@@ -32,9 +32,12 @@ i#burguer:hover {
 menu {
     display: none;
     position: fixed;
-    top: 50px;
+    top: 60px;
     right: 10px;
     z-index: 999;
+    background-color: rgba(255, 222, 173, 0.97);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 menu > ul {
@@ -44,16 +47,15 @@ menu > ul {
 menu > ul > li > a {
     display: block;
     padding: 10px;
-    margin-right: 40px;
+    margin: 0 30px 0 0;
     text-decoration: none;
     color: rgb(126, 30, 30);
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-
 }
 
 menu > ul > li > a:hover {
-    color: rgba(121, 43, 43, 0.37);
+    color: rgba(121, 43, 43, 0.5);
 }
 
 header {
@@ -64,44 +66,48 @@ header {
         rgb(165, 85, 65),
         rgb(194, 120, 85)
     );
+
     line-height: 1.6;
-    cursor: pointer;
+    padding: 10px 0 20px;
 }
 
 h1 {
     font-family: 'Great Vibes', cursive;
     color: white;
     letter-spacing: 3px;
-    text-shadow: 1px 1px 0 black,
-    -1px -1px 0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black;
+    text-shadow:
+        1px 1px 0 black,
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black;
+
     margin-left: 35px;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 h2 {
     font-family: 'Dancing Script', cursive;
     letter-spacing: 3px;
     color: rgb(255, 174, 0);
-    margin-left: 15px;
-    font-size: 30px;
+    margin-left: 20px;
+    font-size: 35px;
 }
 
 h3 {
     font-family: 'Dancing Script', cursive;
-    margin-left: 5px;
+    margin: 25px 0 15px 15px;
     font-size: 35px;
     letter-spacing: 3px;
     color: rgb(102, 26, 26);
+    text-align: center;
 }
 
 h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-left: 20px;
     color: rgb(129, 0, 0);
-    margin-left: 15px;
 }
 
 p {
@@ -109,48 +115,59 @@ p {
     letter-spacing: 2px;
     text-indent: 30px;
     line-height: 1.6;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 15px 20px;
+}
+
+.zion {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-indent: 30px;
+    line-height: 1.6;
+    margin: 15px 20px;
+    font-size: 20px;
 }
 
 img {
-   width: 400px;
-   display: block;
-   margin: auto;
-   /*margin-left: 3px;*/
-   border-radius: 10px;
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
-}
-
-.card {
-    background-color: rgb(148, 114, 91);
-    width: 300px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin: 0 auto;
-}
-
-.imagem {
-    width: 100%;
-    border-radius: 50%;
+    width: 400px;
+    max-width: 90%;
     display: block;
     margin: auto;
-}
-
-.card p {
-    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    border: 1px solid rgb(102, 26, 26);
 }
 
 .escolher {
     background-color: rgb(204, 143, 114);
     color: white;
     font-weight: bold;
+    padding: 25px 20px;
 }
 
-.escolher img {
-    width: 300px;
+.categoria {
+    margin-bottom: 30px;
+}
+
+.categoria h4 {
+    color: rgb(102, 26, 26);
+    margin-left: 10px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+}
+
+.produto p {
+    text-align: center;
+    text-indent: 0;
+    margin: 5px 0 15px;
+    color: white;
+}
+
+.produto img {
+    width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
@@ -158,29 +175,64 @@ img {
     border-radius: 10px;
 }
 
+.card {
+    background-color: rgb(148, 114, 91);
+    width: 300px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.card .imagem {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.card p {
+    color: white;
+    text-indent: 0;
+    margin: 15px 0 0;
+}
+
 .sobre-nos {
     background-color: rgba(91, 45, 35, 0.514);
     color: white;
+    padding: 10px 0;
+}
+
+.sobre-nos p {
+    margin-bottom: 20px;
 }
 
 table {
-    width: 80%;
+    width: 90%;
     font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px auto;
     border-collapse: collapse;
-    margin: auto;
     color: white;
 }
 
-th, td {
+th,
+td {
     text-align: center;
     border: 1px solid rgb(102, 26, 26);
-    padding: 8px;
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(102, 26, 26);
 }
 
 footer {
     text-align: center;
+
     background-image: linear-gradient(
         to right,
         rgb(91, 45, 35),
@@ -188,39 +240,115 @@ footer {
         rgb(165, 85, 65),
         rgb(194, 120, 85)
     );
+
     line-height: 1.6;
-    cursor: pointer;
     color: white;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
+    padding: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) { 
-    h1 { 
-        font-size: 65px; 
-    }     
+footer i {
+    display: block;
+    cursor: pointer;
+}
 
-    img { 
-        width: 690px; 
-    } 
+@media screen and (min-width: 768px) {
 
-    .produto { 
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-    } 
-} 
+    h1 {
+        font-size: 65px;
+    }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { 
-    h1 { 
-        font-size: 90px; 
-    } 
+    h2 {
+        font-size: 38px;
+    }
 
-    img { 
-        width: 1000px; 
-    } 
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-    .produto { 
-       display: grid; 
-       grid-template-columns: 1fr 1fr 1fr; 
-    } 
+    .escolher {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    img {
+        width: 690px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .escolher {
+        padding: 40px;
+    }
+
+    .categoria {
+        max-width: 1200px;
+        margin: 0 auto 40px;
+    }
+
+    .produto {
+        background-color: rgb(148, 114, 91);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 90px;
+    }
+
+    img {
+        width: 1000px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 90px;
+    }
+
+    img {
+        width: 1000px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+        .produto {
+            background-color: rgb(148, 114, 91);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+    /*.produto {
+        background-color: rgb(148, 114, 91);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }*/
 }

@@ -11,316 +11,396 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body onresize="mudouTamanho()">
-    <header id="inicio" class="inicio">
+    <header id="inicio">
         <h1>Café & Encanto</h1>
         <h2>Doce Aroma em cada momento! ☕</h2>
     </header>
 
     <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-        <menu id="itens">
-
-            <br>
-
-            <ul>
-                <li><a href="#inicio" class="link"><ins>Início</ins></a></li>
-                <li><a href="#cardapio" class="link"><ins>Cardápio</ins></a></li>
-                <li><a href="#destaque" class="destaque"><ins>Destaque</ins></a></li>
-                <li><a href="#sobre-nos" class="link"><ins>Sobre nós</ins></a></li>
-                <li><a href="#contato" class="link"><ins>Contado</ins></a></li>
-            </ul>
-        </menu>
+    <menu id="itens">
+        <ul>
+            <li>
+                <a href="#inicio">Início</a>
+            </li>
+            <li>
+                <a href="#cardapio">Cardápio</a>
+            </li>
+            <li>
+                <a href="#destaque">Destaques</a>
+            </li>
+            <li>
+                <a href="#sobre-nos">Sobre nós</a>
+            </li>
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+    </menu>
 
     <br>
 
     <p>
-       Um cantinho feito para você desacelerar, aproveitar bons momentos e se deliciar com sabores especiais.
+        Um cantinho feito para você desacelerar, aproveitar bons momentos
+        e se deliciar com sabores especiais.
     </p>
-
-    <br>
-
     <p>
-       Aqui, cada café é preparado com carinho e cada doce é feito para transformar pequenos momentos em lembranças deliciosas. Venha experimentar nossos cafés, bolos, tortas e outras delícias preparadas especialmente para você.
+        Aqui, cada café é preparado com carinho e cada doce é feito para
+        transformar pequenos momentos em lembranças deliciosas.
+        Venha experimentar nossos cafés, bolos, tortas e outras delícias
+        preparadas especialmente para você.
     </p>
-
-    <br>
-    
     <p>
-       Sinta o aroma, prove a doçura e faça uma pausa no seu dia. 🤎
+        Sinta o aroma, prove a doçura e faça uma pausa no seu dia. 🤎
     </p>
 
     <br>
 
-    <img src="imagem/ChatGPT Image 18 de set. de 2026 20_34_06.png" alt="cafeteria">
+    <img
+        src="imagem/ChatGPT Image 18 de set. de 2026 20_34_06.png"
+        alt="Exterior da cafeteria Café & Encanto"
+    >
 
-    <br>
-
-    <h3 id="cardapio" class="cardapio">
+    <h3 id="cardapio">
         <ins>🗒️ Nosso Cardápio</ins>
     </h3>
-    
-    <div class="escolher">
-    <br>
+
+    <section class="escolher">
+
+        <!-- CAFÉS -->
+
         <div class="categoria">
-    <br>
+
             <h4>☕ Cafés</h4>
-    <br>
+
             <div class="produtos">
-    
+
                 <div class="produto">
-                    <p>Espresso</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ReQocWPFtSvGFAl7pwojyJGVAdhCtdpNmmBV4uxrdA&s=10" alt="espresso">
+
+                    <p class="zion">Espresso</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ReQocWPFtSvGFAl7pwojyJGVAdhCtdpNmmBV4uxrdA&s=10"
+                        alt="Espresso"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Cappuchino</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ptg9zVe97bNhjclOWD-inY1rwQ5QIwtKYpQq5OTVeQ&s=10" alt="cappuchino">
+
+                    <p class="zion">Cappuccino</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ptg9zVe97bNhjclOWD-inY1rwQ5QIwtKYpQq5OTVeQ&s=10"
+                        alt="Cappuccino"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Café com leite</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_X0krdCFVC0CUTbyHlJJfH7-xTmUvH7w1qMoMY1T3A&s=10" alt="café com leite">
+
+                    <p class="zion">Café com leite</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_X0krdCFVC0CUTbyHlJJfH7-xTmUvH7w1qMoMY1T3A&s=10"
+                        alt="Café com leite"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Mocha</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQFQiX4YZ164F4x8HdY2Pzh9MHRBjsFlNXTsLPVlAUCA&s=10" alt="mocha">
+
+                    <p class="zion">Mocha</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQFQiX4YZ164F4x8HdY2Pzh9MHRBjsFlNXTsLPVlAUCA&s=10"
+                        alt="Mocha"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Café gelado</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45cwjUNWYmbR9DNZ6U7Q9-9m7xW5tax5tcT7mB4i58A&s=10" alt="café gelado">
+
+                    <p class="zion">Café gelado</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45cwjUNWYmbR9DNZ6U7Q9-9m7xW5tax5tcT7mB4i58A&s=10"
+                        alt="Café gelado"
+                    >
+
                 </div>
-    
+
             </div>
-    
+
         </div>
-    
-    
-        <!-- ================= DOCES ================= -->
-    
+
+
+        <!-- DOCES -->
+
         <div class="categoria">
-    <br>
+
             <h4>🍰 Doces</h4>
-    <br>
+
             <div class="produtos">
-    <br>
+
                 <div class="produto">
-                    <p>Brownie</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2kQXQNNx0ASBnCKL2r67dvbEfRSUi1VrSGeaGPJDLQ&s=10" alt="brownie">
+
+                    <p class="zion">Brownie</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2kQXQNNx0ASBnCKL2r67dvbEfRSUi1VrSGeaGPJDLQ&s=10"
+                        alt="Brownie"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Cheesecake</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS08zTtVSPBx-wxA1STfQlyKvuVvCdcCYEvmJ1-Lk-W5w&s=10" alt="cheesecake">
+
+                    <p class="zion">Cheesecake</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS08zTtVSPBx-wxA1STfQlyKvuVvCdcCYEvmJ1-Lk-W5w&s=10"
+                        alt="Cheesecake"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Torta de limão</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzIFGc2Ev90iOZ09eBK6vyY7f_PZwoFSdPS0YRbG525w&s" alt="torta de limão">
+
+                    <p class="zion">Torta de limão</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzIFGc2Ev90iOZ09eBK6vyY7f_PZwoFSdPS0YRbG525w&s"
+                        alt="Torta de limão"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Red velvet</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWLTS06nWn9KCuKgEL9aKR9snMa7wE-zG9SQ5UAtkSpg&s=10" alt="red velvet">
+
+                    <p class="zion">Red velvet</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWLTS06nWn9KCuKgEL9aKR9snMa7wE-zG9SQ5UAtkSpg&s=10"
+                        alt="Red velvet"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Brigadeiro gourmet</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZWgMv55jkVyievebxFYtQaowgV-5FLUwKnvAetzi8g&s=10" alt="brigadeiro gourmet">
+
+                    <p class="zion">Brigadeiro gourmet</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZWgMv55jkVyievebxFYtQaowgV-5FLUwKnvAetzi8g&s=10"
+                        alt="Brigadeiro gourmet"
+                    >
+
                 </div>
-    <br>
+
             </div>
-    
+
         </div>
-    
-    
-        <!-- ================= SALGADOS ================= -->
-    
+
+
+        <!-- SALGADOS -->
+
         <div class="categoria">
-    <br>
+
             <h4>🥐 Salgados</h4>
-    <br>
+
             <div class="produtos">
-    <br>
+
                 <div class="produto">
-                    <p>Croissant</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesJfg32AG_1sO41a_KF-iX1FIXaApeSpSoL_ipSdDOQ&s" alt="croissant">
+
+                    <p class="zion">Croissant</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesJfg32AG_1sO41a_KF-iX1FIXaApeSpSoL_ipSdDOQ&s"
+                        alt="Croissant"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Pão de queijo</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rhfWm9DxpBDP0yfuK2AIFsLufl8sKGEy4p_AR14avA&s=10" alt="pão de queijo">
+
+                    <p class="zion">Pão de queijo</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0rhfWm9DxpBDP0yfuK2AIFsLufl8sKGEy4p_AR14avA&s=10"
+                        alt="Pão de queijo"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Quiche</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFldgHAi34Wt9DCA3bdj4wGqlbDaKMMpEW8C1g8rbBgw&s=10" alt="quiche">
+
+                    <p class="zion">Quiche</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFldgHAi34Wt9DCA3bdj4wGqlbDaKMMpEW8C1g8rbBgw&s=10"
+                        alt="Quiche"
+                    >
+
                 </div>
-    <br>
+
                 <div class="produto">
-                    <p>Sanduíche natural</p>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-6S1bn-fn7X2KCGbOYB-l0ogqweDjfKcGq2A4FXJOw&s=10" alt="sanduíche natural">
+
+                    <p class="zion">Sanduíche natural</p>
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-6S1bn-fn7X2KCGbOYB-l0ogqweDjfKcGq2A4FXJOw&s=10"
+                        alt="Sanduíche natural"
+                    >
+
                 </div>
-    <br>
+
             </div>
-    
+
         </div>
-    
-    </div>
 
-   <br>
+    </section>
 
-    <h3 id="destaque" class="destaque"><ins>🍰 Nossos destaques</ins></h3>
+    <h3 id="destaque">
+        <ins>🍰 Nossos destaques</ins>
+    </h3>
 
-    <br>
 
-    <h4>
-      ☕ Cappuchino Cremoso
-    </h4>
-
-    <br>
+    <h4>☕ Cappuccino Cremoso</h4>
 
     <div class="card">
-        <img class="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkoQqfChzqvFigxWjuU9BwU7j_OHNJYHAPYrUClildw&s=10" alt="Cappuchino">
 
-        <br>
+        <img
+            class="imagem"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkoQqfChzqvFigxWjuU9BwU7j_OHNJYHAPYrUClildw&s=10"
+            alt="Cappuccino"
+        >
 
-       <p>
-        Café espresso, leite vaporizado e espuma cremosa.
-       </p>
+        <p>
+            Café espresso, leite vaporizado e espuma cremosa.
+        </p>
+
     </div>
 
-    <br>
 
-    <h4>
-        🍓 Cheesecake de Morango
-    </h4>
-
-    <br>
+    <h4>🍓 Cheesecake de Morango</h4>
 
     <div class="card">
-        <img class="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY31rsBw2lfaO9asDfZIV-wW35G9bG72mFg-cO8P1kNQ&s=10" alt="Cheesecake de Morango">
 
-        <br>
+        <img
+            class="imagem"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY31rsBw2lfaO9asDfZIV-wW35G9bG72mFg-cO8P1kNQ&s=10"
+            alt="Cheesecake de morango"
+        >
 
-       <p>
-        Base crocante, creme suave e cobertura de morango.
-       </p>
+        <p>
+            Base crocante, creme suave e cobertura de morango.
+        </p>
+
     </div>
 
-    <br>
 
-    <h4>
-        🍫 brownie da Casa
-    </h4>
-
-    <br>
+    <h4>🍫 Brownie da Casa</h4>
 
     <div class="card">
-        <img class="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmGiq4HcoBeTU2G1ZVDiMzA-ebBQTlAM7-nNSjgcaLew&s=10" alt="brownie da casa">
 
-        <br>
+        <img
+            class="imagem"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmGiq4HcoBeTU2G1ZVDiMzA-ebBQTlAM7-nNSjgcaLew&s=10"
+            alt="Brownie da casa"
+        >
 
-       <p>
-        Brownie de chocolate com aquele interior bem cremoso.
-       </p>
+        <p>
+            Brownie de chocolate com aquele interior bem cremoso.
+        </p>
+
     </div>
 
-    <br>
 
-    <h4>
-        🥐 Croinssant
-    </h4>
-
-    <br>
+    <h4>🥐 Croissant</h4>
 
     <div class="card">
-        <img class="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokdQqChE0A8qhFRpqBsBplZT78aq0N30oYDfU7l68Tw&s=10" alt="Croinssant">
 
-        <br>
+        <img
+            class="imagem"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokdQqChE0A8qhFRpqBsBplZT78aq0N30oYDfU7l68Tw&s=10"
+            alt="Croissant"
+        >
 
-       <p>
-         Massa folhada, dourada e crocante. 
-       </p>
+        <p>
+            Massa folhada, dourada e crocante.
+        </p>
+
     </div>
-
-    <br>
 
     <h3>
         <ins>🤎 Sobre nós</ins>
     </h3>
 
-
-    <div id="sobre-nos" class="sobre-nos">
-        
-        <br>
+    <section id="sobre-nos" class="sobre-nos">
 
         <p>
             O Café & Encanto nasceu com um propósito simples:
             transformar uma pausa no dia em um momento especial.
         </p>
-    
+
         <p>
             Somos uma cafeteria e doceria que acredita que um bom café,
             acompanhado de um doce delicioso e de um ambiente acolhedor,
             pode tornar qualquer momento mais agradável.
         </p>
-    
+
         <p>
             Aqui, cada detalhe é preparado com carinho. Do aroma do café
             fresquinho ao sabor dos nossos bolos, tortas, doces e salgados,
             queremos que você se sinta em casa.
         </p>
-    
+
         <p>
             Mais do que servir cafés e delícias, queremos criar momentos
             que sejam lembrados. ☕🍰🤎
         </p>
-    
-    </div>
 
-    <h3><ins>Onde estamos ?</ins></h3>
-    <h4>Venha tomar um café com a gente!</h4>
+    </section>
 
-    <br>
+    <h3>
+        <ins>📍 Onde estamos?</ins>
+    </h3>
 
-    <p>Nossos dias e horários</p>
+    <h4>
+        Venha tomar um café com a gente!
+    </h4>
 
-    <br>
+    <p>
+        Nossos dias e horários:
+    </p>
 
     <table>
-       <thead>
+        <thead>
             <tr>
                 <th>Segunda a Sexta</th>
                 <th>Sábado</th>
                 <th>Domingo</th>
             </tr>
-       </thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 às 18:30</td>
+                <td>09:00 às 14:30</td>
+                <td>Fechado</td>
+            </tr>
+        </tbody>
     </table>
 
-    <table>
-        <thead>
-             <tr>
-                 <td>09:00 ás 18:30</td>
-                 <td>09:00 ás 14:30</td>
-                 <td>Fechado</td>
-             </tr>
-        </thead>
-     </table>
+    <br>
 
-     <br>
-
-     <footer id="contato" class="contato">
-        
+    <footer id="contato">
         <i>📍 Petrópolis-RJ</i>
-        <br>
         <i>📞 (24) 99999-9999</i>
-        <br>
-        <i>📧 @&Encanto/café.com.br</i>
-        <br>
-        <i>©️ 2026 Café & Encanto - Todos os direitos reservados.</i>
-
-     </footer>
+        <i>📧 cafe.encanto@email.com</i>
+        <i>
+            ©️ 2026 Café & Encanto - Todos os direitos reservados.
+        </i>
+    </footer>
 
     <script>
         function mudouTamanho() {
@@ -331,13 +411,14 @@
             }
         }
 
+
         function clickMenu() {
             if (itens.style.display == 'block') {
-                itens.style.display = 'none'
+                itens.style.display = 'none';
             } else {
-                itens.style.display = 'block'
+                itens.style.display = 'block';
             }
-        } 
+        }
     </script>
 </body>
 </html>
